@@ -1,7 +1,7 @@
 # Windows Base Profile
 class profile::base::windows(){
-  $build_domain     = $trusted['extensions']['pp_hostname']
-  $build_hostname   = $trusted['extensions']['pp_hostname']
+  $build_domain     = $trusted['domain']
+  $build_hostname   = $trusted['hostname']
   $build_fqdn       = "${build_hostname}.${build_domain}"
   dsc_xcomputer { 'Rename Computer' :
     dsc_name => $build_hostname
