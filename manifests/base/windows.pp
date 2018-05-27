@@ -1,6 +1,6 @@
 # Windows Base Profile
 class profile::base::windows(){
-  dsc_xcomputer { $::certname :
+  dsc_xcomputer { $::hostname :
     dsc_name => $trusted['extensions']['pp_hostname']
   }
   reboot { 'dsc_reboot' : when => pending }
