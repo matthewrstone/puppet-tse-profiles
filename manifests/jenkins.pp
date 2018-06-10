@@ -5,5 +5,11 @@
 # @example
 #   include profiles::profile::jenkins
 class profile::jenkins {
+  $plugins = [
+    'git',
+    'Puppet Enterprise Pipeline',
+  ]
+
   include jenkins
+  $plugins.each |$plugin| { jenkins::plugin { $plugin : } }
 }
