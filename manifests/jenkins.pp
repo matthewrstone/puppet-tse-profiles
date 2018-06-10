@@ -8,19 +8,30 @@ class profile::jenkins {
   $plugins = [
     'git',
     'puppet-enterprise-pipeline',
-    'workflow-scm-step',
-    'workflow-step-api',
     'structs',
     'workflow-api',
     'workflow-basic-steps',
     'workflow-cps',
     'workflow-durable-task-step',
+    'workflow-scm-step',
+    'workflow-step-api',
+    'workflow-support',
     'git-client',
     'scm-api',
     'matrix-project',
     'mailer',
-    'ssh-credentials'
+    'ssh-credentials',
+    'script-security',
+    'durable-task',
+    'apache-httpcomponents-client-4-api',
+    'jsch',
+    'ace-editor',
+    'jquery-detached',
+    'script-security',
+    'display-url-api',
+    'junit'
   ]
+
 
   include jenkins
   $plugins.each |$plugin| { jenkins::plugin { $plugin : } }
