@@ -27,7 +27,6 @@ class profile::jenkins {
     'jsch',
     'ace-editor',
     'jquery-detached',
-    'script-security',
     'display-url-api',
     'junit'
   ]
