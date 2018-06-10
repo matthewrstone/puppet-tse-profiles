@@ -8,6 +8,13 @@ class profile::jenkins {
   $plugins = [
     'git',
     'puppet-enterprise-pipeline',
+    'workflow-scm-step',
+    'workflow-step-api',
+    'structs',
+    'workflow-api',
+    'workflow-basic-steps',
+    'workflow-cps',
+    'workflow-durable-task-step'
   ]
 
   include jenkins
