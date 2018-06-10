@@ -28,7 +28,8 @@ class profile::jenkins {
     'ace-editor',
     'jquery-detached',
     'display-url-api',
-    'junit'
+    'junit',
+    'plain-credentials',
   ]
 
 
