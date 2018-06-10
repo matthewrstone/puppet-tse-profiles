@@ -14,7 +14,12 @@ class profile::jenkins {
     'workflow-api',
     'workflow-basic-steps',
     'workflow-cps',
-    'workflow-durable-task-step'
+    'workflow-durable-task-step',
+    'git-client',
+    'scm-api',
+    'matrix-project',
+    'mailer',
+    'ssh-credentials'
   ]
 
   include jenkins
