@@ -7,7 +7,7 @@
 class profile::jenkins {
   $plugins = [
     'git',
-    'Puppet Enterprise Pipeline',
+    'puppet-enterprise-pipeline',
   ]
 
   include jenkins
