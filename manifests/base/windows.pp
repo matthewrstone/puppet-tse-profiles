@@ -19,14 +19,13 @@ class profile::base::windows(){
     ensure          => installed,
     source          => 'c:\\files\\npp.7.5.6.installer.x64.exe',
     install_options => ['/S'],
-    # install_options => [ '/S', { 'INSTALLDIR' => 'C:\mysql-5.5' } ],
     provider        => windows,
   }
 
   # Install a chocolatey package
   # 2.17.1
   package { 'git.install' :
-    ensure   => '2.16.1.2',
+    ensure   => '2.16.1.3',
     provider => 'chocolatey',
   }
 }
