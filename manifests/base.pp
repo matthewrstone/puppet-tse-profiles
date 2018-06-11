@@ -1,4 +1,7 @@
 class profile::base{
+  $build_domain     = $trusted['domain']
+  $build_hostname   = $trusted['hostname']
+  $build_fqdn       = "${build_hostname}.${build_domain}"
   $hostfile = $kernel ? {
     'Linux'   => '/etc/hosts',
     'windows' => 'c:\\windows\\system32\\drivers\\etc\\hosts',
