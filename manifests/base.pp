@@ -8,7 +8,7 @@ class profile::base{
     comment      => 'Managed by Puppet',
     host_aliases => "${::hostname}.mrs.puppetdemo.net",
     ip           => $::ipaddress,
-    target       => $hostfile
+#    target       => $hostfile
   }
   Host <<| |>>
 }
