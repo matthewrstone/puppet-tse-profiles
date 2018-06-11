@@ -15,7 +15,7 @@ class profile::base::windows(){
   reboot { 'dsc_reboot' : when => pending }
 
   # Install an MSI package
-  package { 'notepadplusplus':
+  package { 'Notepad++ (64-bit x64)':
     ensure          => installed,
     source          => 'c:\\files\\npp.7.5.6.installer.x64.exe',
     install_options => ['/S'],
