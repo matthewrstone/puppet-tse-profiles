@@ -9,10 +9,6 @@ class profile::base::windows(){
   $build_domain     = $trusted['domain']
   $build_hostname   = $trusted['hostname']
   $build_fqdn       = "${build_hostname}.${build_domain}"
-  dsc_xcomputer { 'Rename Computer' :
-    dsc_name => $build_hostname
-  }
-  reboot { 'dsc_reboot' : when => pending }
 
   # Install an MSI package
   package { 'Notepad++ (64-bit x64)':
