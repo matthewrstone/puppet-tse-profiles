@@ -23,9 +23,10 @@ class profile::base::windows(){
   }
 
   # Install a chocolatey package
-  # 2.17.1
+
+  # 2.16.3
   package { 'git.install' :
-    ensure   => '2.16.1.4',
+    ensure   => '2.16.2',
     provider => 'chocolatey',
   }
 }
